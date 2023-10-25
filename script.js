@@ -71,3 +71,19 @@ $(document).ready(function(){
         }
     });
 });
+// Download CV
+document.getElementById('download-cv').addEventListener('click', function () {
+    // Replace 'cv.pdf' with the actual URL of your CV PDF.
+    var pdfUrl = 'files/HanimaRajan.pdf';
+
+    // Create an anchor element for downloading the PDF.
+    var a = document.createElement('a');
+    a.href = pdfUrl;
+    a.download = 'HanimaRajan.pdf'; // Set the desired download file name.
+
+    // Trigger a click event on the anchor to start the download.
+    a.style.display = 'none';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  });
