@@ -87,3 +87,7 @@ document.getElementById('download-cv').addEventListener('click', function () {
     a.click();
     document.body.removeChild(a);
   });
+
+  function melbinHyperLink(){
+    window.location.href = 'melbin-jacob.html';
+}
